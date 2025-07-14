@@ -45,4 +45,9 @@ public class SecurityController {
         model.addAttribute("user", getPrincipal());
         return "/access_denied";
     }
+
+    @GetMapping("/login")
+    public String loginPage() {
+        return "/login";
+    }
 }
